@@ -249,36 +249,64 @@ header > nav a {
 }
 
 #middle-actus-bottom {
+    margin-left: 5px;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .middle-actus-bottom-item {
-    width: 45%;
-    height: 120px;
-    border: 1px solid;
-    margin-top: 30px;
+    width: 50%;
+    height: 140px;
+    margin-top: 50px;
     display: flex;
-    justify-content: space-between;
-
 }
 
 .middle-actus-bottom-item-img {
-    width: 30%;
+    width: 140px;
     height: 100%;
     background-size: cover;
 }
 
 .middle-actus-bottom-item-right {
-    width: 65%;
+    width: 55%;
+    font-size: 16px;
+    margin-left: 15px;
+
 }
 
-.middle-actus-bottom-item-right > p{
+.middle-actus-bottom-item-right > p {
     color: orange;
+    margin-top: 0;
 }
 
 #middle-actus-bottom 
 .middle-actus-bottom-item:nth-child(1) > 
 .middle-actus-bottom-item-img {
+    background-image: url('../assets/images/fruits.jpg');
+}
+
+#middle-actus-bottom 
+.middle-actus-bottom-item:nth-child(2) > 
+.middle-actus-bottom-item-img {
     background-image: url('../assets/images/middle-actu-bottom-item-2.jpg');
 }
 
+#middle-actus-bottom 
+.middle-actus-bottom-item:nth-child(3) > 
+.middle-actus-bottom-item-img {
+    background-image: url('../assets/images/vin.jpg');
+}
+
+#middle-actus-bottom 
+.middle-actus-bottom-item:nth-child(4) > 
+.middle-actus-bottom-item-img {
+    background-image: url('../assets/images/colibri.jpg');
+}
+
+
+
+#middle-section-second {
+    display: flex;
+    flex-direction: column;
+}
