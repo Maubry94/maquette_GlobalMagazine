@@ -221,13 +221,11 @@ header > nav a {
 }
 
 #middle-section-main {
-    width: 65%;
-    border: 1px solid;
+    width: 60%;
 }
 
 #middle-article-section > aside {
-    width: 30%;
-    border: 1px solid;
+    width: 35%;
 }
 
 #middle-article-section  h2 {
@@ -241,49 +239,65 @@ header > nav a {
     display: flex;
 }
 
+#middle-actus-main > .actu-content {
+    padding: 0 0 0 30px;
+    width: 60%;
+    align-items: flex-start;
+}
+
+#middle-actus-main > .actu-content h3 {
+    margin-top: 0;
+}
+
+#middle-actus-main > .actu-content p, #middle-actus-main > .actu-content h3 {
+    text-align: left;
+}
+
+#middle-actus-main > .actu-content p {
+    font-size: 18px;
+}
+
 #middle-actus-main-img {
     margin-left: 5px;
-    width: 100%;
-    height: auto;
+    height: 300px;
+    width: 400px;
     background-image: url('../assets/images/midle-actus-main.jpg');
 }
 
 #middle-actus-bottom {
-    margin-left: 5px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: 5px;
 }
 
 .middle-actus-bottom-item {
     width: 50%;
-    height: 140px;
-    margin-top: 50px;
+    height: 120px;
+    margin-top: 60px;
     display: flex;
 }
 
-.middle-actus-bottom-item-img {
-    width: 140px;
+.middle-actus-bottom-item-img, .middle-actus-aside-item-img {
+    width: 120px;
     height: 100%;
-    background-size: cover;
+    background-size: cover
 }
 
-.middle-actus-bottom-item-right {
+.middle-actus-bottom-item-right, .middle-actus-aside-item-right {
     width: 55%;
-    font-size: 16px;
-    margin-left: 15px;
-
+    font-size: 15px;
+    margin-left: 15px
 }
 
-.middle-actus-bottom-item-right > p {
+.middle-actus-bottom-item-right > p, .middle-actus-aside-item-right > p {
     color: orange;
-    margin-top: 0;
+    margin-top: 0
 }
 
 #middle-actus-bottom 
 .middle-actus-bottom-item:nth-child(1) > 
 .middle-actus-bottom-item-img {
-    background-image: url('../assets/images/fruits.jpg');
+    background-image: url('../assets/images/middle-actu-bottom-item-2.jpg');
 }
 
 #middle-actus-bottom 
@@ -295,18 +309,44 @@ header > nav a {
 #middle-actus-bottom 
 .middle-actus-bottom-item:nth-child(3) > 
 .middle-actus-bottom-item-img {
-    background-image: url('../assets/images/vin.jpg');
+    background-image: url('../assets/images/middle-actu-bottom-item-2.jpg');
 }
 
 #middle-actus-bottom 
 .middle-actus-bottom-item:nth-child(4) > 
 .middle-actus-bottom-item-img {
-    background-image: url('../assets/images/colibri.jpg');
+    background-image: url('../assets/images/middle-actu-bottom-item-2.jpg');
 }
 
-
-
-#middle-section-second {
+.middle-actus-aside-item {
+    margin: 60px 30px 60px 0;
     display: flex;
-    flex-direction: column;
+    height: 120px;
 }
+
+#middle-actus-aside-items 
+.middle-actus-aside-item:nth-child(1) > 
+.middle-actus-aside-item-img {
+    background-image: url('../assets/images/middle-actu-bottom-item-2.jpg');
+}
+
+#middle-actus-aside-items
+.middle-actus-aside-item:nth-child(2) > 
+.middle-actus-aside-item-img {
+    background-image: url('../assets/images/middle-actu-bottom-item-2.jpg');
+}
+
+#middle-actus-aside-items 
+.middle-actus-aside-item:nth-child(3) > 
+.middle-actus-aside-item-img {
+    background-image: url('../assets/images/middle-actu-bottom-item-2.jpg');
+}
+
+#middle-actus-aside-items 
+.middle-actus-aside-item:nth-child(4) > 
+.middle-actus-aside-item-img {
+    background-image: url('../assets/images/middle-actu-bottom-item-2.jpg');
+}
+
+
+
