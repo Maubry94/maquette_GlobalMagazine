@@ -376,7 +376,6 @@ header > nav a {
 .bottom-actu-top-content {
     width: 30%;
     height: 700px;
-    border: solid 1px;
 }
 
 .bottom-actus-img {
@@ -397,4 +396,33 @@ header > nav a {
 
 .bottom-actu-top-content:nth-child(1) {
     margin-left: 5px;
+}
+
+
+.bottom-actu-content  { 
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.bottom-actu-content > * {
+    color: grey;
+}
+.bottom-actu-content > h3 {
+    color: black;
+    font-size: 2.3vw;
+}
+
+.bottom-actu-content p {
+    margin-top: 0;
+    font-size: 1.4vw;
+}
+
+.bottom-actu-content > a {
+    width: 130px;
+    padding: 10px;
+    border: 1px solid orange;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 25px 0;
 }
