@@ -233,6 +233,7 @@ header > nav a {
     color: white;
     padding: 5px 0 5px 10px;
     text-transform: uppercase;
+    font-size: 18px;
 }
 
 #middle-actus-main {
@@ -349,4 +350,51 @@ header > nav a {
 }
 
 
+#bottom-actu-section nav {
+    background-color: #222;
+    padding: 0;
+    display: flex;
+}
 
+#bottom-actu-section input[type="button"] {
+    border: none;
+    background-color: #222;
+    color: white;
+    outline: none;
+}
+
+#bottom-actu-section input[type="button"]:hover {
+    background-color: orange;
+}
+
+#bottom-actu-ctnr {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.bottom-actu-top-content {
+    width: 30%;
+    height: 700px;
+    border: solid 1px;
+}
+
+.bottom-actus-img {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#bottom-actus-img-1 {
+    background-image: url('http://upload.wikimedia.org/wikipedia/commons/8/82/Good_News_First_-promotional-.jpg');
+}
+
+.bottom-actu-top-content img:nth-child(1) {
+    width: 100%;
+}
+
+.bottom-actu-top-content:nth-child(1) {
+    margin-left: 5px;
+}
