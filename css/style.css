@@ -350,55 +350,52 @@ header > nav a {
 }
 
 #bottom-actus-section {
-    margin: 50px 0; 
+    margin: 50px 0
+}
+/*
+TODO
+*/
+
+input[name="bottom-actus-section-nav"] {
+   width: 110px; 
+   height: 35px;
+   position: relative;
+   opacity: 0;
 }
 
-input[name="bottom-actus-section-nav"]{
-    height: 35px;
-    width: 110px;
-    position: relative;
-    opacity: 0;
-}
+
 
 #bottom-actus-section > nav {
     background-color: #222;
     height: 35px;
-    margin-top: -40px;
+    margin-top: -40px 
 }
 
 #bottom-actus-section input[type="button"] {
     border: none;
     color: white;
+    background-color: #222;
     outline: none;
     height: 100%;
     font-size: 19px;
     width: 110px
-
-}
-
-#bottom-actus-press-btn, #bottom-actus-actus-btn, #bottom-actus-infos-btn {
-    background-color: #222;
-}
-
-#bottom-actus-section > input[value='bottom-actus-infos']:checked ~ nav > #bottom-actus-infos-btn,
-#bottom-actus-section > input[value='bottom-actus-actus']:checked ~ nav > #bottom-actus-actus-btn,
-#bottom-actus-section > input[value='bottom-actus-press']:checked ~ nav > #bottom-actus-press-btn {
-    background-color: orange;
 }
 
 .bottom-actus-item {
     display: none;
 }
 
-#bottom-actus-section > input[value='bottom-actus-press']:checked ~ div .bottom-actus-item-press {
-    display: block;
+#bottom-actus-section > input[value='bottom-actus-press']:checked ~ nav > #bottom-actus-press-btn,
+#bottom-actus-section > input[value='bottom-actus-actus']:checked ~ nav > #bottom-actus-actus-btn, 
+#bottom-actus-section > input[value='bottom-actus-infos']:checked ~ nav > #bottom-actus-infos-btn
+{
+    background-color: orange;
 }
 
-#bottom-actus-section > input[value='bottom-actus-actus']:checked ~ div .bottom-actus-item-actus {
-    display: block;
-}
-
-#bottom-actus-section > input[value='bottom-actus-infos']:checked ~ div .bottom-actus-item-infos {
+#bottom-actus-section > input[value='bottom-actus-press']:checked ~ div > .bottom-actus-item-press,
+#bottom-actus-section > input[value='bottom-actus-actus']:checked ~ div > .bottom-actus-item-actus,
+#bottom-actus-section > input[value='bottom-actus-infos']:checked ~ div > .bottom-actus-item-infos
+{
     display: block;
 }
 
@@ -435,6 +432,8 @@ input[name="bottom-actus-section-nav"]{
 
 #slider-bottom-section {
     margin-bottom: 100px;
+    position: relative;
+    overflow-x: hidden;
 }
 
 #menu-nav-slider {
@@ -466,14 +465,60 @@ input[name="bottom-actus-section-nav"]{
 
 #slider-bottom-ctnr {
     display: flex;
-    overflow: hidden;
+    width: 130%;
 }
 
-.slider-bottom-img-ctnr {
-    margin-left: 50px;
+.slider-bottom-img-ctnr {  
+    margin: 1%;
+    position: relative;
 }
 
 .slider-bottom-img-ctnr img {
-    width: 250px;
-    height: 180px;
+    width: 98%;
+    height: auto;
+    margin: 1%;
+}
+
+#slider-bottom-section > input[name='slider-section-nav'] {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+}
+
+#slider-bottom-section > input[value='slide-right'] {
+    right: 0;
+}
+
+#slider-bottom-section > input[value='slide-left'] {
+    right: 30px;
+}
+
+#slider-bottom-section > input[value='slide-right']:checked ~ #slider-bottom-ctnr {
+    animation: slideRight 2s forwards;
+}
+
+#slider-bottom-section > input[value='slide-left']:checked ~ #slider-bottom-ctnr {
+    animation: slideLeft 2s forwards;
+}
+
+@keyframes slideLeft {
+    from {
+        margin-left: -30%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: -30%;
+    }
 }
