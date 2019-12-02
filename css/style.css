@@ -171,7 +171,7 @@ header > nav a {
     color: orange;
 }
 
-.actu-content > a {
+.actu-content > a, .bottom-actus-item-content a {
     padding: 10px;
     border: 1px solid orange;
     text-transform: uppercase;
@@ -233,11 +233,11 @@ header > nav a {
     color: white;
     padding: 5px 0 5px 10px;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 #middle-actus-main {
-    display: flex;
+    display: flex
 }
 
 #middle-actus-main > .actu-content {
@@ -349,92 +349,96 @@ header > nav a {
     background-image: url('../assets/images/middle-actu-bottom-item-2.jpg');
 }
 
-
-#bottom-actu-section nav {
-    height: 30px;
-    background-color: #222;
-    padding: 0;
-    display: flex;
+#bottom-actus-section {
+    margin: 50px 0; 
 }
 
-#bottom-actu-section input[type="button"] {
-    border: none;
+input[name="bottom-actus-section-nav"]{
+    height: 35px;
+    width: 110px;
+    position: relative;
+    opacity: 0;
+}
+
+#bottom-actus-section > nav {
     background-color: #222;
+    height: 35px;
+    margin-top: -40px;
+}
+
+#bottom-actus-section input[type="button"] {
+    border: none;
     color: white;
     outline: none;
+    height: 100%;
+    font-size: 19px;
+    width: 110px
+
 }
 
-#bottom-actu-section input[type="button"]:hover {
+#bottom-actus-press-btn, #bottom-actus-actus-btn, #bottom-actus-infos-btn {
+    background-color: #222;
+}
+
+#bottom-actus-section > input[value='bottom-actus-infos']:checked ~ nav > #bottom-actus-infos-btn,
+#bottom-actus-section > input[value='bottom-actus-actus']:checked ~ nav > #bottom-actus-actus-btn,
+#bottom-actus-section > input[value='bottom-actus-press']:checked ~ nav > #bottom-actus-press-btn {
     background-color: orange;
 }
 
-#bottom-actu-ctnr {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+.bottom-actus-item {
+    display: none;
 }
 
-.bottom-actu-top-content {
+#bottom-actus-section > input[value='bottom-actus-press']:checked ~ div .bottom-actus-item-press {
+    display: block;
+}
+
+#bottom-actus-section > input[value='bottom-actus-actus']:checked ~ div .bottom-actus-item-actus {
+    display: block;
+}
+
+#bottom-actus-section > input[value='bottom-actus-infos']:checked ~ div .bottom-actus-item-infos {
+    display: block;
+}
+
+#bottom-actus-section > div {
+    display: flex;
+    justify-content: space-between
+}
+
+.bottom-actus-item {
     width: 30%;
 }
 
-.bottom-actus-img {
-    width: 100%;
+.bottom-actus-item-actus, .bottom-actus-item-infos {
+    display: none;
+}
+
+.bottom-actus-item img {
+    width: 98%;
     height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    margin: 1%;
 }
 
-#bottom-actus-img-1 {
-    background-image: url('http://upload.wikimedia.org/wikipedia/commons/8/82/Good_News_First_-promotional-.jpg');
+.bottom-actus-item-content {
+    margin: 1%;
 }
 
-.bottom-actu-top-content img:nth-child(1) {
-    width: 100%;
+.bottom-actus-item-content > .actu-date-and-comments {
+    margin: 30px 0;
 }
 
-.bottom-actu-top-content:nth-child(1) {
-    margin-left: 5px;
+.bottom-actus-item-content a {
+    color: grey
 }
-
-
-.bottom-actu-content  { 
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-}
-
-.bottom-actu-content > * {
-    color: grey;
-}
-.bottom-actu-content > h3 {
-    color: black;
-    font-size: 2.3vw;
-}
-
-.bottom-actu-content p {
-    margin-top: 0;
-    font-size: 1.4vw;
-}
-
-.bottom-actu-content > a {
-    width: 130px;
-    padding: 10px;
-    border: 1px solid orange;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin: 25px 0;
-}
-
 
 #slider-bottom-section {
     margin-bottom: 100px;
-    margin-top: 50px;
 }
 
 #menu-nav-slider {
-    border: solid 1px;
+    border: 1px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -442,6 +446,7 @@ header > nav a {
     color: white;
     height: 30px;
 }
+
 
 #menu-nav-slider h2 {
     margin: 0;
@@ -451,17 +456,16 @@ header > nav a {
 }
 
 .slider-bottom-nav-fa {
-    font-size: 10px;
     background-color: orange;
+    font-size: 10px;
     padding: 10px 10px;
-    margin-top: 3px;
-    margin-left: -2px;
+    margin-top: 2px;
+    margin-left: -3px;
     font-weight: bolder;
 }
 
 #slider-bottom-ctnr {
     display: flex;
-    justify-content: space-evenly;
     overflow: hidden;
 }
 
