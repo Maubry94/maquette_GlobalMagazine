@@ -6,7 +6,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%
+    width: 100%;
 }
 
 #header-top {
@@ -14,10 +14,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 15px
 }
 
-#main-nav-menu {
+ #main-nav-menu {
     margin: 10px 0
 }
 
@@ -27,12 +27,12 @@ body {
     padding: 3px 7px 3px 5px
 }
 
-#main-nav-menu  a {
+#main-nav-menu a {
     text-transform: uppercase;
     border-right: 1px solid grey
 }
 
-#main-nav-menu  a:last-child {
+#main-nav-menu a:last-child {
     border-right: none
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 #s-n-icons {
-    font-size: 25px;
+    font-size: 26px;
     margin-right: 6%
 }
 
@@ -528,25 +528,54 @@ input[name="bottom-actus-section-nav"] {
     }
 }
 
-
 footer {
     padding-top: 70px;
     display: flex;
     justify-content: space-between;
-    background-color: #222;
     background-color: rgba(34, 34, 34, 0.9);
 }
+
+footer h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+footer p, footer span {
+    color: silver;
+}
+
+footer input[type='text'] {
+    background-color: black;
+    width: 100%;
+    border: none;
+    color: silver;
+    outline: none;
+    font-size: 19px;
+    height: 25px;
+}
+
+footer input[type='submit'] {
+   margin-top: 10px; 
+   background-color: orange;
+   text-transform: uppercase;
+   color: white;
+   border: none;
+   outline: none;
+   padding: 4px 7px; 
+}
+
 
 #footer-left {
     width: 60%;
     display: flex;
     justify-content: space-between;
 }
-#footer-left-side div:first-child {
+
+#footer-left div:first-child {
     width: 55%;
 }
 
-#footer-left-side div:last-child {
+#footer-left div:last-child {
     width: 35%;
 }
 
@@ -559,39 +588,4 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 }
-
-#globale {
-    width: 50%;
-}
-
-#amet {
-    width: 35%;
-}
-
-footer h3 {
-    color: white;
-    text-transform: uppercase;
-}
-
-footer p, footer span {
-    color: silver;
-}
-
-footer input[type="text"] {
-    border: none;
-    width: 100%;
-    height: 30px;
-    background-color: #222;
-    color: silver;
-    outline: none;
-}
-
-footer input[type="submit"] {
-    margin-top: 20px;
-    text-transform: uppercase;
-    background-color: orange;
-    color: white;
-    border: none;
-    outline: none;
-    padding: 4px 7px;
-}
+   
