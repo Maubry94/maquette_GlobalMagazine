@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'GeosansLight';
+    src: url('../assets/fonts/GeosansLight.ttf')
+}
+
+@font-face {
+    font-family: 'NobileBold';
+    src: url('../assets/fonts/Nobile-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'NobileRegular';
+    src: url('../assets/fonts/Nobile-Regular.ttf')
+}
+
+h1, h2, h3 {
+    font-family: 'GeosansLight';
+}
+
+h5, p {
+    font-family: nobileRegular;
+}
+
 body {
     margin: 0
 } 
@@ -27,12 +50,12 @@ body {
     padding: 3px 7px 3px 5px
 }
 
-#main-nav-menu a {
+#header-top > nav a {
     text-transform: uppercase;
     border-right: 1px solid grey
 }
 
-#main-nav-menu a:last-child {
+#header-top > nav a:last-child {
     border-right: none
 }
 
@@ -125,7 +148,8 @@ header > nav div:hover:before {
 }
 
 .top-actus-side {
-    width: 48%; 
+    width: 48%;
+    position: relative;
 }
 
 #top-actus > .top-actus-side:first-child {
@@ -133,10 +157,13 @@ header > nav div:hover:before {
     
 }
 
-
 #top-actus > .top-actus-side:first-child img {
     width: 100%;
     margin-bottom: -4px;
+}
+
+#top-actus > .top-actus-side:first-child img:hover {
+    filter: brightness(0.6);
 }
 
 .actu-content  { 
@@ -200,6 +227,11 @@ header > nav div:hover:before {
     background-size: cover;
     background-position: center;
 }
+
+.top-actus-right-img:hover {
+    filter: brightness(0.6)
+}
+
 
 #top-actus-right-img-1 {
     background-image: url('http://upload.wikimedia.org/wikipedia/commons/8/82/Good_News_First_-promotional-.jpg');
@@ -287,6 +319,10 @@ header > nav div:hover:before {
     width: 120px;
     height: 100%;
     background-size: cover
+}
+
+.middle-actus-bottom-item-img:hover, .middle-actus-aside-item-img:hover {
+    filter: brightness(0.6);
 }
 
 .middle-actus-bottom-item-right, .middle-actus-aside-item-right {
@@ -413,6 +449,10 @@ input[name="bottom-actus-section-nav"] {
     width: 30%;
 }
 
+.bottom-actus-item img:hover {
+    filter: brightness(0.6);
+}
+
 .bottom-actus-item-actus, .bottom-actus-item-infos {
     display: none;
 }
@@ -482,6 +522,10 @@ input[name="bottom-actus-section-nav"] {
     width: 98%;
     height: auto;
     margin: 1%;
+}
+
+.slider-bottom-img-ctnr img:hover {
+    filter: brightness(0.6);
 }
 
 #slider-bottom-section > input[name='slider-section-nav'] {
